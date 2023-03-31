@@ -1,6 +1,7 @@
 import styles from "../../styles/Work.module.css";
-import works from "../../works";
+import { works } from "../../content";
 import { labels } from "../../menu";
+import { Paragraphs } from "../../renderers";
 
 export default function Work({ work }) {
   return (
@@ -24,13 +25,21 @@ export default function Work({ work }) {
             ([key, link], index, { length }) => {
               return (
                 <span key={index}>
-                  <a href={link}>{key}</a>
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: "underline" }}
+                  >
+                    {key}
+                  </a>
                   {length - 1 != index ? ", " : ""}
                 </span>
               );
             }
           )}
         </div>
+        {<Paragraphs content={work.description} />}
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-import works from "./works";
+import { works } from "./content";
 
 const menu = [
   ...works.reduce((categories, work) => {
@@ -24,9 +24,9 @@ const menu = [
 ];
 
 export const labels = {
-	year: 'Production Year',
-	release: 'Release',
-	medium: 'Medium',
-}
+  year: "Production Year",
+  release: "Release",
+  medium: "Medium",
+};
 
 export default menu;
