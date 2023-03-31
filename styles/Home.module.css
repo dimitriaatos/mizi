@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+}
+
+.main {
+  padding: 1rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+	width: 100%;
+}
+
+.mainContent {
+	max-width: 50rem;
+}
+
+.image {
+	width: 100%;
+}
+
+.navBar {
+	width: 300px;
+	padding: 1rem;
+}
+
+.navBar > ul {
+	list-style: none;
+	padding: 0;
+	border-style: solid;
+	border-width: 4px 0;
+}
+
+.navBar ul li:not(:first-child) {
+	border-top: 1px solid white;
+}
+
+.navBar ul li {
+	padding: 0.5rem 0;
+}
+
+.works {
+	padding-left: 3rem;
+}
