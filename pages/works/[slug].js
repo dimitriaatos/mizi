@@ -40,6 +40,18 @@ export default function Work({ work }) {
           )}
         </div>
         {<Paragraphs content={work.description} />}
+        <div
+          style={{
+            marginTop: "3rem",
+            display: "flex",
+            gap: "1rem",
+            flexWrap: "wrap",
+          }}
+        >
+          {work.images.map((path, index) => {
+            return <img key={index} src={path} style={{ width: "20rem" }} />;
+          })}
+        </div>
       </div>
     </>
   );
