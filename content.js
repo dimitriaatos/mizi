@@ -1,3 +1,6 @@
+const getBandcampLink = (album) =>
+  `https://bandcamp.com/EmbeddedPlayer/album=${album}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/`;
+
 export const works = [
   {
     category: "Music & Sound Works",
@@ -11,6 +14,7 @@ export const works = [
     documentation: {
       bandcamp: "https://tawpot.bandcamp.com/album/music-behind-music",
     },
+    embed: getBandcampLink("1220015234"),
     description: [
       "“Music Behind Music” is based on the theoretical framework of media archaeology, extending and applying the ideas of the field on experimental music. The main music material is derived through the transmutation, extension, redefinition and cracking of obsolete recording media. “Music Behind Music” is a reflection on the unique properties of the media and the definition of information/noise; an invitation to listen to the music behind the music, a tribute to surface noise. Music Behind Music is comprised by 3 distinct works: Rummaging the Medium (15’39’’), 1973 (07’31’’), Variations on the Bells of Alexander Nevsky (10’35’’).",
     ],
@@ -52,9 +56,9 @@ export const works = [
       bandcamp: "https://mizithras.bandcamp.com/album/hard-drive-sniffing",
       website: "https://citiesandmemory.com/obsolete-sounds/",
     },
+    embed: getBandcampLink("4009526048"),
     description: [
       "The original recording of an early 80's ST-251 Seagate hard disk initiates the powering up process of 6 different hard drives and the subsequent probing and exploration of their inner mechanisms and sounds. The original powering up sequence can be heard slightly manipulated at the very beginning of the piece, it is the cue for a stretched canon of hard drives spinning up to 7200 RPMs. The original recording functions as an extra disk, a phantom object treated in the digital domain, that becomes part of the hard drive instrumentarium.",
-
       "Through a slow and methodical use of electromagnetic coils each hard drive is meticulously scanned, and all the different sonic elements of the object are isolated: The tones and harmonics produced by the high rotational speed, the electromagnetic micro-noises of the mechanical head, the sonic artefacts of the hard disk controller and the USB data line. The minuscule phase differences of each disk’s rotation, provide a constant droning beating, that is prominent for most of the duration of the piece, until it is finally ousted by the noisier mechanisms and sounds of the drives.",
     ],
   },
@@ -66,7 +70,7 @@ export const works = [
     year: 2023,
     release: "self-released video",
     medium: "Video music performance",
-    documentation: { video: "https://youtu.be/OSOaF8pxv4o" },
+    documentation: { video: "https://www.youtube.com/watch?v=OSOaF8pxv4o" },
     description: [
       "Rummaging through some broken records and CDs, using my Augmented Turntable Max/MSP system alongside a Pioneer CDJ.",
       "Performed and recorded live at an undisclosed location, 27th of March 2023.",
@@ -89,7 +93,6 @@ export const works = [
     },
     description: [
       "Buzzer was commissioned by Onassis Stegi from the young composer Niki Krasaki. A rich palette of sounds drawn from toys, and from children’s musical instruments and objects, acted as the source of her inspiration, unleashing her imagination for the creation of a unique form of music notation that allows for improvisation. The piece is performed by Trigger Happy, an edgy four-piece improvisational contemporary music collective who play (with) phrases from well-known children’s melodies and fables, and with the rules of team games.",
-
       "Performed by Trigger Happy: Yorgos Stenos Fratzios - Yorgos Stavridis - Georgios Mizithras (MIZI) - Manthos Karas",
     ],
   },
@@ -104,8 +107,7 @@ export const works = [
       "Live-streaming performance for OBS streaming software, video-delay, webcam, household objects",
     documentation: { video: "https://www.youtube.com/watch?v=yj6L2_ywIos" },
     description: [
-      `LOW BIT RATE STREAMING is a web-based audiovisual performance that took place on the facebook platform 31 march of 2020 during the COVID-19 Greek state lockdown.", 
-              "The performance is based on an internal feedback loop of the stream and the principle of digital generation loss, hailing Alvin Lucier's "I'm Sitting in a Room".`,
+      `LOW BIT RATE STREAMING is a web-based audiovisual performance that took place on the facebook platform 31 march of 2020 during the COVID-19 Greek state lockdown.", "The performance is based on an internal feedback loop of the stream and the principle of digital generation loss, hailing Alvin Lucier's "I'm Sitting in a Room".`,
       "Each feedback  loop repetition is subject to the stream's compression algorithm, each passing incrementally crushes the original material. Given enough passes the audio and video signal's symbolical and physical properties are transmutated into an array of compressed digital noise, losing bit by bit it's former state.",
       "LOW BIT RATE STREAMING is a communal act. Stream viewers were welcomed to send their own audio & video clips which were promptly played in real-time creating an environment for both collective and self-reflection. How accessible are our data? How do we perceive and handle content creation? How transparent is the medium?",
     ],
@@ -120,7 +122,7 @@ export const works = [
       "A sound-choreography workshop for adolescents that produced 8 solo video-dance performances and a collective live performance. Produced by the Athens Epidaurus Festival 2021. Choreographer: Marianna Kavallieratos",
     medium: "Live electronics & fixed media for dance",
     documentation: {
-      Website: "aefestival.gr/ancient-future-solo-the-workshop/",
+      Website: "https://aefestival.gr/ancient-future-solo-the-workshop/",
     },
     description: [
       "Ancient Future Solo was a choreography-sound workshop that spanned for 9 sessions. Adolescents aged 14 to 17, were called to explore and create a solo dance piece. Antigone and Helen were chosen as a starting conceptual point, from there on, each participant, through guidance, made their own artistic decisions, composing a short sol dance piece. The music was made in collaboration with each participant, discussing, the form, sounds, textures and density that’d better corresponded to their piece. The 8 dance works were documented as video-dance performances due to COVID-restrictions. The temporary lift of the restrictions at the summer of 2021 lead to a live-performance, where all the participants worked intensively as a dance group creating a new piece, longer in form, and presenting it in-front of a live audience on September 2021.",
@@ -171,7 +173,7 @@ export const works = [
     release: "N.Gallery 03/05/2019",
     medium:
       "Workshop for turntables, prepared records, cut-up records, various material",
-    documentation: { Link: "https://youtu.be/GrHAE0R--lM" },
+    documentation: { Link: "https://www.youtube.com/watch?v=GrHAE0R--lM" },
     description: [
       "For the duration of the workshop the participants were called to experiment with the turntable and various records, cutting them up, preparing them, creating new surfaces and exploring new ways of interacting with the medium, ultimately turning it into a musical instrument.",
       "At the end of the workshop the participants had a chance to perform short improvised duets for two turntables. The night was concluded with a free improvisation performance of double-bass, cracked media duet KOHMA. There was also a soul kitchen intermission curated by the food alchemist and sound experimentalist Virginie Viel.",
@@ -204,10 +206,10 @@ export const works = [
     documentation: {
       Link: "https://mizithras.bandcamp.com/album/keeping-pace",
     },
+    embed: getBandcampLink("2372148630"),
     description: [
       "A collection of acousmatic music pieces created in the span of 2 years.",
-      `Piano Reduction (15'36''):The sound materials of the piece are derived from a found instrument, a detached piano harp. The title as a classical music term,refers to a piano score reduced from an original orchestral score for analysis, performance, or practice purposes. In the compositional context the title indicates the reduction of multiple aspects of the piano: Physically, there's a transformation of the materiality of the object, which occurs through the decay of its original form, leading to a new kind of object with redefined musical properties, a new instrument in its own right. Perceptually, in the chasm that is created through electroacoustic means between the actual physical object and it's sound both in space and time, a body stripped from its sound, sounds stripped from their body.
-                                The realization of the piece wouldn't be possible without the help of my friend and colleague Georgios Stavridis, who played in all of the recordings.`,
+      `Piano Reduction (15'36''):The sound materials of the piece are derived from a found instrument, a detached piano harp. The title as a classical music term,refers to a piano score reduced from an original orchestral score for analysis, performance, or practice purposes. In the compositional context the title indicates the reduction of multiple aspects of the piano: Physically, there's a transformation of the materiality of the object, which occurs through the decay of its original form, leading to a new kind of object with redefined musical properties, a new instrument in its own right. Perceptually, in the chasm that is created through electroacoustic means between the actual physical object and it's sound both in space and time, a body stripped from its sound, sounds stripped from their body. The realization of the piece wouldn't be possible without the help of my friend and colleague Georgios Stavridis, who played in all of the recordings.`,
       `Unstable Systems (10'42''): For 8 Loudspeakers (Stereo Reduction). The piece explores the transition of musical enviroments between stable and unstable states. With the introduction of enough musical elements a stable state is established which sets the range where the musical parameters usually fluctuate. When enough parameters exceed this certain threshold, the system becomes unstable, reaching a high entropy point. The musical elements aren't working in conjuction with one another rather they are "competing" for musical and acoustic space until the collapse of the system. The debris then form a new “stable” music enviroment and the cycle continues.`,
       `Microheat (9'00''): A stereo Piece made for the Amazing Noises contest in the midst of a summer heatwave in Athens.`,
       `Playgroup (06'56''): It is common knowledge that the remembrance of things past is subject to strong discontinuities and distortions. We cannot recall time as a linearly measured flow."(Curtis Roads, 2001) Playgroup is an exploration of temporal, timbral and spatial contrasts. An impression of a soundscape, part synthesized, part natural is juxtaposed with gestural sequences of sound objects made out of toys creating a narrative of a playgroup experience long gone.`,
@@ -221,10 +223,11 @@ export const works = [
     year: 2019,
     release: "Self-released cassette tape & digital album",
     medium:
-      " G. Kokkinaris: double-bass MIZI: 0-input mixer, portable cassette players, 4-track cassette recorders, electromagnetic coils, contact microphones, toy flutes",
+      "G. Kokkinaris: double-bass MIZI: 0-input mixer, portable cassette players, 4-track cassette recorders, electromagnetic coils, contact microphones, toy flutes",
     documentation: {
       Link: "https://kohma.bandcamp.com/album/kohma-live-at-chimeres-space",
     },
+    embed: getBandcampLink("3703978964"),
     description: [
       "The album is the debut release of the free improvisation duet KOHMA. As an introduction to the intuitive music of KOHMA, we've released a live set that took part at chimeres.space on 1st of December 2018 and captures the unadulterated essence of our sound. The B-side is split between solo pieces of KOHMA members: Four studies of electronic and electroacoustic music by MIZI and an improvisational piece revolving around the tragic murder of Mary Rose.",
     ],
@@ -238,7 +241,7 @@ export const works = [
     release: "Comissioned by NEON to the artist Stavros Gasparatos",
     medium: "Procedurally generated sound for website",
     documentation: {
-      Link: "https://kohma.bandcamp.com/album/kohma-live-at-chimeres-space",
+      Link: "https://sonicweatherstation.online",
     },
     description: [
       `The station is an online program that procedurally generates sonic output by receiving combined weather data from a physical weather station in Greece.`,
@@ -251,7 +254,6 @@ export const works = [
 
 export const bio = [
   `Georgios Mizithras aka "MIZI" is a musician, sound artist and creative	programmer. He is active both as a composer and a performer in a range	of fields, including acousmatic music, improvisation, sound art, music	for theatrical plays, audiovisual installations and radio art. His	current research revolves around the idea of “media rummaging”, the	constant intuitive exploration of different playback, recording and	transmission media, creating works based on the unique properties of	different sound media. He's part of the KEDiMouRa Collective and the	experimental music ensemble Trigger Happy. He's a curator and producer	of the radio art internet platform loskop.radio. His radio works have	been featured on the temporary art radio station "Radiophrenia".	Notably, he has performed at “Irtijal '19” Festival (Beirut, 2019),	“Borderline Festival” (Athens, 2019), “Rhubaba” Gallery (Edinburgh,	2018), “Klingt Gut” Festival (Hamburg, 2017).`,
-  ,
   `He has studied at	De Montfort University's Music Technology and Innovation department	(Leicester), is a graduate of composition at the Music Studies	department of the Ionian University and holds a Master's degree in	Musicology: Music Technology from the National and Kapodistrian	University of Athens. He’s currently a PhD student at the Music Studies	department of the Ionian University.`,
   `gmizithras@gmail.com`,
 ];

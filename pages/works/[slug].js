@@ -2,12 +2,16 @@ import styles from "../../styles/Work.module.css";
 import { works } from "../../content";
 import { labels } from "../../menu";
 import { Paragraphs } from "../../renderers";
+import EmbeddedMedia from "../../components/EmbeddedMedia";
 
 export default function Work({ work }) {
   return (
     <>
       <h1 className={styles.title}>{work.title}</h1>
       <div className={styles.container}>
+        <EmbeddedMedia
+          link={work.embed || Object.values(work.documentation)[0]}
+        />
         {Object.entries(labels).map(([key, label]) => {
           return (
             <div key={key}>
