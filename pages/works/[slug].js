@@ -8,10 +8,6 @@ export default function Work({ work }) {
     <>
       <h1 className={styles.title}>{work.title}</h1>
       <div className={styles.container}>
-        <div>
-          <span className={styles.key}>Duration: </span>
-          {work.duration ?? "Undetermined"}
-        </div>
         {Object.entries(labels).map(([key, label]) => {
           return (
             <div key={key}>
