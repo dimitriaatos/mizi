@@ -153,7 +153,7 @@ export const works = [
   {
     category: "Web/Radio Sound Art",
     title: "Deep Internet Cuts",
-    images: ["public/deepInternetCuts/deepInternetCuts.jpeg"],
+    images: ["/deepInternetCuts/deepInternetCuts.jpeg"],
     slug: "deep-internet-cuts",
     year: 2020,
     release: "Released as a podcast-style radio work at loskop.radio",
