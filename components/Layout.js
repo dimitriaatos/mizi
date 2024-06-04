@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
-import menu from "../menu";
+import menu from "../js/menu";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ children }) {

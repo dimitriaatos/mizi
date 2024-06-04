@@ -1,7 +1,7 @@
 import styles from "../../styles/Work.module.css";
-import { works } from "../../content";
-import { labels } from "../../menu";
-import { Paragraphs } from "../../renderers";
+import { works } from "../../js/content";
+import { labels } from "../../js/menu";
+import { Paragraphs } from "../../js/renderers";
 import EmbeddedMedia from "../../components/EmbeddedMedia";
 
 export default function Work({ work }) {
