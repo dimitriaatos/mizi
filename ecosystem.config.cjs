@@ -8,7 +8,7 @@ const prod = {
 	repo: 'https://github.com/dimitriaatos/mizi.git',
 	path: '/home/dimitriaatos/sites/mizi/front',
 	'post-deploy':
-		'source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.cjs --env production',
+		'source ~/.nvm/nvm.sh && pnpm install && pnpm build && pm2 reload ecosystem.config.cjs --env production',
 	'ssh-options': 'ForwardAgent=yes',
 }
 
@@ -16,7 +16,7 @@ module.exports = {
 	apps: [
 		{
 			name: 'mizi',
-			script: 'npm start',
+			script: 'pnpm start',
 			env_production,
 		},
 	],
