@@ -1,1 +1,3 @@
-A portfolio website for Mizi (Georgios Mizithras) available at https://mizi.media. The design is inspired by http://phonography.org.
+# Mizi media
+
+A portfolio website for Mizi (Georgios Mizithras). The design is inspired by http://phonography.org.
